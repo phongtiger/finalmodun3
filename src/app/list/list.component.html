@@ -1,0 +1,19 @@
+<h1>Danh sách các cuốn sách</h1>
+<br/>
+<div >
+  <table border="1">
+    <tr>
+      <th>#</th>
+      <th>Tên sách</th>
+      <th>Tác giả</th>
+    </tr>
+    <tr *ngFor="let item of output">
+      <td><a [routerLink]="['info',item.id]">{{item.id}}</a></td>
+      <td>{{item.title}}</td>
+      <td>{{item.author}}</td>
+      <a [routerLink]="['delete',item.id]">xóa</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a [routerLink]="['edit',item.id]">sửa</a>
+    </tr>
+  </table>
+</div>
+
