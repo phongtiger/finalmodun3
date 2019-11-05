@@ -1,0 +1,21 @@
+<h1>Chi tiết danh sách</h1>
+<a routerLink="/home"></a>
+<div *ngIf="info; else nothing">
+  <table border="1">
+    <div>
+      <h3>Chi tiết sách:</h3>
+    </div>
+    <div>
+      Tác giả: <p>{{info.author}}</p>
+    </div>
+    <div>
+      Tên sách: <p>{{info.title}}</p>
+    </div>
+    <div>
+      Mô tả: <p>{{info.description}}</p>
+    </div>
+  </table>
+</div>
+<ng-template #nothing>
+  <p>Nothing to show</p>
+</ng-template>

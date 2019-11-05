@@ -8,11 +8,11 @@
       <th>Tác giả</th>
     </tr>
     <tr *ngFor="let item of output">
-      <td><a [routerLink]="['info',item.id]">{{item.id}}</a></td>
-      <td>{{item.title}}</td>
+      <td>{{item.id}}</td>
+      <td><a [routerLink]="['/info',item.id]">{{item.title}}</a></td>
       <td>{{item.author}}</td>
-      <a [routerLink]="['delete',item.id]">xóa</a>&nbsp;&nbsp;&nbsp;&nbsp;
-      <a [routerLink]="['edit',item.id]">sửa</a>
+      <a [routerLink]="['/delete',item.id]">xóa</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a [routerLink]="['/edit',item.id]">sửa</a>
     </tr>
   </table>
 </div>
