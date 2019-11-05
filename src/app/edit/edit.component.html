@@ -1,0 +1,24 @@
+<h1>Create</h1>
+<form [formGroup]="data" (ngSubmit)="editContent()">
+  <table border="1">
+    <tr>
+      <th>Them sach moi</th>
+    </tr>
+    <tr>
+      <td>Ten sach</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td>Tac gia</td>
+      <td><input type="text" formControlName="author"></td>
+    </tr>
+    <tr>
+      <td>Mo ta</td>
+      <td><textarea type="text" formControlName="description"></textarea></td>
+    </tr>
+    <tr>
+      <button type="submit">Edit</button>
+      <a href="/">Thoat</a>
+    </tr>
+  </table>
+</form>

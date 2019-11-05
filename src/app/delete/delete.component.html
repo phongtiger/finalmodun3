@@ -1,4 +1,3 @@
-<h1>Chi tiết danh sách</h1>
 <a href="/">Home</a>
 <div *ngIf="info; else nothing">
   <table border="1">
@@ -15,6 +14,7 @@
       Mô tả: <p>{{info.description}}</p>
     </div>
   </table>
+  <button (click)="deleteContent(info.id)"> Xoa</button>
 </div>
 <ng-template #nothing>
   <p>Nothing to show</p>
